@@ -1285,7 +1285,7 @@ $RemoveOnedrive.Add_Click( {
 $InstallNet35.Add_Click( {
 
         Write-Host "Initializing the installation of .NET 3.5..."
-        DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
+        DISM.exe /Online /Enable-Feature /FeatureName:NetFx3 /All
         Write-Host ".NET 3.5 has been successfully installed!"
     } )
 
